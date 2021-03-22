@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <code class="javascript">    <span class="hljs-keyword">var</span> data = [
+        { <span class="hljs-attr">cnode</span>: <span class="hljs-string">'0107'</span>, <span class="hljs-attr">cname</span>: <span class="hljs-string">'北京'</span> },
+        { <span class="hljs-attr">cnode</span>: <span class="hljs-string">'0107'</span>, <span class="hljs-attr">cname</span>: <span class="hljs-string">'北京'</span> },
+        { <span class="hljs-attr">cnode</span>: <span class="hljs-string">'0105'</span>, <span class="hljs-attr">cname</span>: <span class="hljs-string">'上海'</span> },
+        { <span class="hljs-attr">cnode</span>: <span class="hljs-string">'0105'</span>, <span class="hljs-attr">cname</span>: <span class="hljs-string">'上海'</span> },
+    ];
+    
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getNewObjArr</span>(<span class="hljs-params">data</span>) </span>{
+        <span class="hljs-keyword">var</span> newData = [];
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = data.length; i &lt; len; i++) {
+            <span class="hljs-keyword">var</span> flag = <span class="hljs-number">1</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> j = <span class="hljs-number">0</span>, len2 = newData.length; j &lt; len2; j++) {
+                <span class="hljs-keyword">if</span>(newData[j].cnode === data[i].cnode &amp;&amp; newData[j].cname === data[i].cname){
+                    flag=<span class="hljs-number">0</span>;
+                    <span class="hljs-keyword">break</span>;
+                }
+            }
+            flag === <span class="hljs-number">1</span> ? newData.push(data[i]):<span class="hljs-literal">false</span>;
+        }
+        <span class="hljs-keyword">return</span> newData;
+    }
+    <span class="hljs-built_in">console</span>.log(getNewObjArr(data));</code>
+</body>
+
+</html>

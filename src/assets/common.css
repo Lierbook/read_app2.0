@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#app{
+    overflow: hidden;
+}
+div{
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box img{
+    border-radius: 4px;
+}
+
+.topTitle{
+    font-weight: 600;
+    font-size: 18px;
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    text-align: center;
+    margin-top: 0 !important;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #fff;
+    box-shadow: 0px 0 15px 5px #a9d5ff1e;
+}
