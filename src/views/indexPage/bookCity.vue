@@ -1,6 +1,6 @@
 <template>
   <div class="root">
-    <div class="topTitle">兮翱诗沃·免费小说</div>
+    <div class="topTitle">小马哥小说</div>
     <van-tabs v-model="activeName" animated >
       <van-tab title="男生" name="a"><boys></boys></van-tab>
       <van-tab title="女生" name="b"><girls></girls></van-tab>
